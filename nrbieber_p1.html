@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Business Analytics Student Survey - Page 1</title>
 </head>
 <body>
-    
+    <!-- Heading -->
+    <h1>Business Analytics Student Survey</h1>
+
+    <!-- Form for inputs -->
+    <form action="nrbieber_p2.html" method="post">
+        <!-- Input box for home country with autofocus -->
+        <label for="home_country">My home country is:</label><br>
+        <input type="text" id="home_country" name="home_country" value="autofocus" autofocus><br><br>
+
+        <!-- Select box for home town -->
+        <label for="home_town">My home town is:</label><br>
+        <select name="state" id="state-select">
+            <option value="">-- choose state/territory --</option>
+            <option value="AL">AL</option>
+            <option value="AK">AK</option>
+            <option value="AZ">AZ</option>
+            <!-- Add more states/territories as needed -->
+            <option value="DC">DC - Washington D.C.</option>
+            <option value="AS">AS - American Samoa</option>
+            <option value="GU">GU - Guam</option>
+            <option value="MP">MP - Northern Mariana Islands</option>
+            <option value="PR">PR - Puerto Rico</option>
+            <option value="VI">VI - U.S. Virgin Islands</option>
+        </select><br><br>
+
+        <!-- Likert scale for impression of BAIS major -->
+        <label for="impression">My impression of the BAIS major is:</label><br>
+        <select name="impression" id="impression">
+            <option value="5">5 - Very positive</option>
+            <option value="4">4 - Somewhat positive</option>
+            <option value="3">3 - Neutral</option>
+            <option value="2">2 - Somewhat negative</option>
+            <option value="1">1 - Very negative</option>
+        </select><br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Next">
+    </form>
 </body>
 </html>
