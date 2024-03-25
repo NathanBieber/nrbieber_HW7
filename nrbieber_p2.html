@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Business Analytics Student Survey - Page 2</title>
 </head>
 <body>
-    
+    <!-- Heading -->
+    <h1>Business Analytics Student Survey - Page 2</h1>
+
+    <!-- Form for inputs -->
+    <form action="nrbieber_p3.html" method="post">
+        <!-- Selection box for "I am finishing my" -->
+        <label for="finishing_year">I am finishing my:</label><br>
+        <select name="finishing_year" id="finishing_year" required>
+            <option value="">-- Select one --</option>
+            <option value="first_year">First year at Iowa</option>
+            <option value="second_year">Second year at Iowa</option>
+            <option value="third_year">Third year at Iowa</option>
+            <option value="fourth_year">Fourth year at Iowa</option>
+            <option value="fifth_or_more">Fifth or more year at Iowa</option>
+        </select><br><br>
+
+        <!-- Checkbox options for "BAIS core class I have completed" -->
+        <label>BAIS core class(es) I have completed:</label><br>
+        <input type="checkbox" id="Information_Systems" name="core_classes[]" value="Information Systems">
+        <label for="Information_Systems">Information Systems</label><br>
+
+        <input type="checkbox" id="Operations" name="core_classes[]" value="Operations">
+        <label for="Operations">Operations</label><br>
+
+        <input type="checkbox" id="Foundations_of_Business_Analytics" name="core_classes[]" value="Foundations of Business Analytics">
+        <label for="Foundations_of_Business_Analytics">Foundations of Business Analytics</label><br>
+
+        <input type="checkbox" id="Computational_Thinking" name="core_classes[]" value="Computational Thinking">
+        <label for="Computational_Thinking">Computational Thinking</label><br>
+
+        <input type="checkbox" id="Database_Management" name="core_classes[]" value="Database Management">
+        <label for="Database_Management">Database Management</label><br>
+
+        <input type="checkbox" id="Data_Wrangling" name="core_classes[]" value="Data Wrangling">
+        <label for="Data_Wrangling">Data Wrangling</label><br>
+
+        <input type="checkbox" id="Data_Mining" name="core_classes[]" value="Data Mining">
+        <label for="Data_Mining">Data Mining</label><br>
+
+        <input type="checkbox" id="BAIS_Capstone" name="core_classes[]" value="BAIS Capstone">
+        <label for="BAIS_Capstone">BAIS Capstone</label><br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Next">
+    </form>
 </body>
 </html>

@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Business Analytics Student Survey - Page 3</title>
+    <style>
+        /* Style for tooltip */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 200px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -100px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- Heading -->
+    <h1>Business Analytics Student Survey - Page 3</h1>
+
+    <!-- Form for inputs -->
+    <form action="nrbieber_ty.html" method="post">
+
+        <!-- Text box for "My race/ethnicity is" -->
+        <label for="race_ethnicity">My race/ethnicity is:</label><br>
+        <input type="text" id="race_ethnicity" name="race_ethnicity" required><br><br>
+
+        <!-- Text box for "My gender/sex is" with tooltip -->
+        <div class="tooltip">
+            <label for="gender_sex">My gender/sex is:</label><br>
+            <input type="text" id="gender_sex" name="gender_sex" required>
+            <span class="tooltiptext">Identifying your gender helps us enhance diversity and inclusivity in tech by addressing historical gender imbalances</span>
+        </div><br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Finish">
+    </form>
 </body>
 </html>
